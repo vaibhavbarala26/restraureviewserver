@@ -1,0 +1,453 @@
+[
+    {
+        "name":"Khalsa Hotel",
+        "latitude":23.8234826,
+        "longitude":86.539429,
+        "full_address":"Grand Trunk Rd, Gobindpur, Ratanpur, Jharkhand 828109",
+        "reviews":{
+            "reviews_count":14527.0
+        }
+    },
+    
+    {
+        "name":"Seventeen Degrees Hotel",
+        "latitude":23.7824974,
+        "longitude":86.4153514,
+        "full_address":"Sriram Mall, Dhansar, Shastri Nagar, Dhanbad, Jharkhand 828106",
+        "reviews":{
+            "reviews_count":3460.0
+        }
+    },
+    {
+        "name":"Domino's Pizza",
+        "latitude":23.786083,
+        "longitude":86.416724,
+        "full_address":"Shop No. UG-09, Upper Ground Floor, Ozone Plaza, Bank More, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":3301.0
+        }
+    },
+    {
+        "name":"Mani's Cafe",
+        "latitude":23.8117198,
+        "longitude":86.4482782,
+        "full_address":"opp. PK Memorial College, ISM Staff Colony, Lohar Kulli, Saraidhella, Dhanbad, Jharkhand 828127",
+        "reviews":{
+            "reviews_count":2696.0
+        }
+    },
+    {
+        "name":"Lemon Chilli Fun & Food Park",
+        "latitude":23.8254262,
+        "longitude":86.4595893,
+        "full_address":"Tapowan colony, Dhanbad, Jharkhand 828127",
+        "reviews":{
+            "reviews_count":2201.0
+        }
+    },
+    {
+        "name":"Aranya's Pure Veg",
+        "latitude":23.822094,
+        "longitude":86.4751714,
+        "full_address":"Govindpur road Opp Libra Hyundai Govindpur, Jharkhand 828109",
+        "reviews":{
+            "reviews_count":1911.0
+        }
+    },
+    {
+        "name":"The Other Side",
+        "latitude":23.8052085,
+        "longitude":86.4305954,
+        "full_address":"1st Floor, City Centre, Mall Rd, Jharudih, Tundi, Gobindpur, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":1753.0
+        }
+    },
+    {
+        "name":"Waikiki",
+        "latitude":23.7880848,
+        "longitude":86.4185647,
+        "full_address":"NH-32, Pandey Muhalla, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":1721.0
+        }
+    },
+    {
+        "name":"Konark Restaurant",
+        "latitude":23.8132373,
+        "longitude":86.4612731,
+        "full_address":"Steel Gate, Kusum Vihar, Chanakya Nagar, Dhanbad, Jharkhand 826005",
+        "reviews":{
+            "reviews_count":1452.0
+        }
+    },
+    {
+        "name":"Gaya Singh litti Dukan",
+        "latitude":23.7978564,
+        "longitude":86.4379483,
+        "full_address":"Randhir Verma Chowk, beside Hanuman Mandir, Pandey Muhalla, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":1338.0
+        }
+    },
+    {
+        "name":"New Bombay Sweets",
+        "latitude":23.8052036,
+        "longitude":86.4305971,
+        "full_address":"City Centre Below ICICI Bank, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":1322.0
+        }
+    },
+    {
+        "name":"Bahamas Fusion Kitchen",
+        "latitude":23.8120179,
+        "longitude":86.4568473,
+        "full_address":"swastika complex, Dhanbad, Jharkhand 828127",
+        "reviews":{
+            "reviews_count":1294.0
+        }
+    },
+    {
+        "name":"Khusboo Restaurant",
+        "latitude":23.8015041,
+        "longitude":86.44491,
+        "full_address":"RC2V+JX3, JC Mallick Rd, Near BJP OFFICE, Baba Colony, Hirapur, CMPF Colony, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":1108.0
+        }
+    },
+    {
+        "name":"Kaveri's Restaurant",
+        "latitude":23.7865501,
+        "longitude":86.4175839,
+        "full_address":"1st Floor, Rajhans Mansion, Bank More, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":1083.0
+        }
+    },
+    {
+        "name":"Mughal Darbar",
+        "latitude":23.7914022,
+        "longitude":86.4198377,
+        "full_address":"Bhuli More, near Mughal Darbar, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":1076.0
+        }
+    },
+    {
+        "name":"YARKS",
+        "latitude":23.8052655,
+        "longitude":86.4328842,
+        "full_address":"RC4M+452, Luby Circular Rd, Sardar Patel Nagar, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":910.0
+        }
+    },
+    {
+        "name":"Madhulika Inn",
+        "latitude":23.806883,
+        "longitude":86.432217,
+        "full_address":"Housing Colony Rd, Bartand, Sardar Patel Nagar, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":893.0
+        }
+    },
+    {
+        "name":"Apple Restaurant",
+        "latitude":23.7996581,
+        "longitude":86.4279085,
+        "full_address":"QCXH+V57, Dhaiya Rd, Bekarbandh, Kasturba Nagar, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":888.0
+        }
+    },
+    {
+        "name":"AROTI RESTAURANT",
+        "latitude":23.7793883,
+        "longitude":86.4490735,
+        "full_address":"Amrita Raj Road, Parking Market Rd, Hirapur, Pandey Muhalla, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":888.0
+        }
+    },
+    {
+        "name":"London Street Sports Pub",
+        "latitude":23.8121774,
+        "longitude":86.4558521,
+        "full_address":"petrol pump, opposite Saraidhella, Lohar Kulli, Saraidhella, Dhanbad, Jharkhand 828127",
+        "reviews":{
+            "reviews_count":879.0
+        }
+    },
+    {
+        "name":"Hotel Coal Capital",
+        "latitude":23.7876978,
+        "longitude":86.4131809,
+        "full_address":"Vikash Nagar, Matkuria, near hyundai Showroom, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":743.0
+        }
+    },
+    {
+        "name":"Shawarma Street",
+        "latitude":23.8090419,
+        "longitude":86.4428033,
+        "full_address":"Saraidhela Rd, opposite IIT (ISM, CMPF Colony, Dhanbad, Jharkhand 826004",
+        "reviews":{
+            "reviews_count":734.0
+        }
+    },
+    {
+        "name":"Carnival Cafe",
+        "latitude":23.8330444,
+        "longitude":86.4280657,
+        "full_address":"Hirak Road, More, Memco, Dhanbad, Jharkhand 826004",
+        "reviews":{
+            "reviews_count":626.0
+        }
+    },
+    {
+        "name":"Kwality Hotel",
+        "latitude":23.7878774,
+        "longitude":86.4218959,
+        "full_address":"QCQC+5Q2, Amrita Raj Rd, Damodarpur, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":626.0
+        }
+    },
+    {
+        "name":"The Open Box - Bar & Restaurant",
+        "latitude":23.8475929,
+        "longitude":86.4745226,
+        "full_address":"NH 2, Bhitia More, Kashitand, Jharkhand 828109",
+        "reviews":{
+            "reviews_count":577.0
+        }
+    },
+    {
+        "name":"The Yellow Chilli Restaurant Dhanbad",
+        "latitude":23.8210347,
+        "longitude":86.4698354,
+        "full_address":"Ozone Galleria Mall, 4th Floor, Unit No 408, A & B, Saraidhella, Jharkhand 828127",
+        "reviews":{
+            "reviews_count":575.0
+        }
+    },
+    {
+        "name":"Bharat Hindu Hotel",
+        "latitude":23.7934053,
+        "longitude":86.4271152,
+        "full_address":"Near, Bus Stand, Shop No-26,Rly Market Complex, Railway, Station Rd, Rangatand, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":556.0
+        }
+    },
+    {
+        "name":"Domino's Pizza",
+        "latitude":23.812697,
+        "longitude":86.43258,
+        "full_address":"SANYUKT TOWERS DHANBAD JHARKHAND First Floor Sanyukt Towers Barwa Road, Bartand, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":538.0
+        }
+    },
+    {
+        "name":"RAVI HOTEL DHANBAD JHARKHAND",
+        "latitude":23.8420503,
+        "longitude":86.4907209,
+        "full_address":"RFRR+R7H, Delhi - Kolkata Hwy, Dhanbad, Kandra, Jharkhand 828127",
+        "reviews":{
+            "reviews_count":537.0
+        }
+    },
+    {
+        "name":"PUNKS VATIKA RESTAURANT & BAR",
+        "latitude":23.8015722,
+        "longitude":86.1976751,
+        "full_address":"BHIMKANALI, Baghmara, Jharkhand 828306",
+        "reviews":{
+            "reviews_count":500.0
+        }
+    },
+    {
+        "name":"Celebration : A Multi-Cuisine Family Restaurant",
+        "latitude":23.7897304,
+        "longitude":86.4264112,
+        "full_address":"Dhanbad Railway Station Rd, New Station Railway Colony, Damodarpur, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":499.0
+        }
+    },
+    {
+        "name":"Eight1Restaurant Cum Party Point",
+        "latitude":23.8200125,
+        "longitude":86.4695201,
+        "full_address":"Capital Mall, Near Big Bazar, Saraidhela, Kolakusma, Govindpur Rd, above \u095b\u0941\u0921\u093f\u092f\u094b, Saraidhella, Jharkhand 828127",
+        "reviews":{
+            "reviews_count":494.0
+        }
+    },
+    {
+        "name":"South Ka Swad",
+        "latitude":23.8025928,
+        "longitude":86.4349952,
+        "full_address":"Housing Colony, Sardar Patel Nagar, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":485.0
+        }
+    },
+    {
+        "name":"Punjabi Weds Paratha",
+        "latitude":23.8096254,
+        "longitude":86.4428105,
+        "full_address":"RC5V+V43, NH18, CMPF Colony, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":480.0
+        }
+    },
+    {
+        "name":"Red Chilli Restaurant",
+        "latitude":23.7987658,
+        "longitude":86.4409198,
+        "full_address":"Basement Park Mansion Building Hatiya Road, Parking Market Rd, Hirapur, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":471.0
+        }
+    },
+    {
+        "name":"Hotel Shere Punjab",
+        "latitude":23.7937682,
+        "longitude":86.4271972,
+        "full_address":"Shubham Rd, Mukunda, Pandey Muhalla, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":462.0
+        }
+    },
+    {
+        "name":"Tiwari Hotel",
+        "latitude":23.7974775,
+        "longitude":86.4381755,
+        "full_address":"Randhir Verma Chowk, court more, Hirapur, Pandey Muhalla, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":426.0
+        }
+    },
+    {
+        "name":"Aamantran Greens \/ Taste of Asia Restaurant",
+        "latitude":23.8224371,
+        "longitude":86.434031,
+        "full_address":"Barwa Road, beside Bank of India, Dhaiya, Dhanbad, Jharkhand 826004",
+        "reviews":{
+            "reviews_count":401.0
+        }
+    },
+    {
+        "name":"Monalisa restaurant",
+        "latitude":23.8116458,
+        "longitude":86.4550893,
+        "full_address":"RF64+M24, New Karmik Nagar Rd, Kusum Vihar, Lohar Kulli, Dhanbad, Jharkhand 828127",
+        "reviews":{
+            "reviews_count":361.0
+        }
+    },
+    {
+        "name":"Momo Magic Cafe",
+        "latitude":23.8052253,
+        "longitude":86.4307485,
+        "full_address":"1st Floor City Center Sardar Patel Marg, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":356.0
+        }
+    },
+    {
+        "name":"Millenium Host Restaurant",
+        "latitude":23.7876369,
+        "longitude":86.4182408,
+        "full_address":"near, 1st floor, Rathore Mansion, Bank More, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":330.0
+        }
+    },
+    {
+        "name":"I - Ball Restaurant",
+        "latitude":23.8121537,
+        "longitude":86.4553314,
+        "full_address":"Sumit Petrol Pump Station, Saraidhela Rd, Lohar Kulli, Saraidhella, Dhanbad, Jharkhand 828127",
+        "reviews":{
+            "reviews_count":299.0
+        }
+    },
+    {
+        "name":"Peep-In",
+        "latitude":23.782559,
+        "longitude":86.420842,
+        "full_address":"Purana Bazar Main Rd, opposite Shakti Mandir, Dhanbad, Jharkhand 828106",
+        "reviews":{
+            "reviews_count":289.0
+        }
+    },
+    {
+        "name":"HOTEL SUBHASH",
+        "latitude":23.7878263,
+        "longitude":86.422544,
+        "full_address":"Bank Rd, Damodarpur, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":287.0
+        }
+    },
+    {
+        "name":"Chaska chilli",
+        "latitude":23.7892318,
+        "longitude":86.4200213,
+        "full_address":"near ray talkies, behind City Style Complex, Bank More, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":280.0
+        }
+    },
+    {
+        "name":"Biryani By Kilo- Dhanbad",
+        "latitude":23.8209588,
+        "longitude":86.4715353,
+        "full_address":"Ground Floor, Shop No. 2,3,5,6 & 7 Newtech Grand 3, Saraidhela Rd, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":261.0
+        }
+    },
+    {
+        "name":"CITY BAR AND RESTAURANT",
+        "latitude":23.7878945,
+        "longitude":86.4219454,
+        "full_address":"Amrita Raj Rd, Mada Colony, Pandey Muhalla, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":255.0
+        }
+    },
+    {
+        "name":"Wow! Momo",
+        "latitude":23.7878527,
+        "longitude":86.4225739,
+        "full_address":"Shop No 2, Ground Floor, Bhagwati Cplx, Bank Rd, near Water Tank, Purana Bazar, Damodarpur, Dhanbad, Jharkhand 826001",
+        "reviews":{
+            "reviews_count":251.0
+        }
+    },
+    {
+        "name":"Tasty Bites",
+        "latitude":23.8113802,
+        "longitude":86.4442572,
+        "full_address":"RC6V+HP2, ISM, 2nd Gate, Saraidhella, Jharkhand 826004",
+        "reviews":{
+            "reviews_count":242.0
+        }
+    },
+    {
+        "name":"Kaveri Family Restaurant",
+        "latitude":23.8177346,
+        "longitude":86.4096653,
+        "full_address":"Binod Bihari chowk, 8, lane road, Nawadih, Dhanbad, Jharkhand 828130",
+        "reviews":{
+            "reviews_count":242.0
+        }
+    }
+]
