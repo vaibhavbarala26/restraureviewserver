@@ -8,7 +8,7 @@ routeruser.post("/", async (req, res) => {
     const { name, email } = req.body;
 
     // Clear the old cookie if exists
-    res.clearCookie("token", { path: "/", domain: ".vercel.app", httpOnly: true, signed: true });
+    res.clearCookie("token", { path: "/", domain: "vercel.app", httpOnly: true, signed: true });
 
     try {
         // Find user in the database
@@ -24,7 +24,7 @@ routeruser.post("/", async (req, res) => {
             // Set the token in an HTTP-only cookie
             res.cookie("token", token, {
                 path: "/",
-                domain: ".vercel.app",  // Allow cookies for all subdomains
+                domain: "vercel.app",  // Allow cookies for all subdomains
                 httpOnly: true,
                 signed: true,
                 expires: expires,
@@ -43,7 +43,7 @@ routeruser.post("/", async (req, res) => {
             // Set the token in an HTTP-only cookie
             res.cookie("token", token, {
                 path: "/",
-                domain: ".vercel.app",  // Allow cookies for all subdomains
+                domain: "vercel.app",  // Allow cookies for all subdomains
                 httpOnly: true,
                 signed: true,
                 expires: expires,
