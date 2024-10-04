@@ -162,34 +162,24 @@ appRouter.get("/hotel", async (req, res) => {
     }
 });
 
-appRouter.post("/hotel-review",  async (req, res) => {
+appRouter.post("/hotel-review", async (req, res) => {
     try {
         const { email, review_text, id, stars } = req.body;
 
-        // Input validation (basic check)
-        if (!review_text || !stars) {
-            return res.status(400).json({ message: "Review text and star rating are required" });
+        // Input validation
+        if (!review_text || !stars || stars < 1 || stars > 5) {
+            return res.status(400).json({ message: "Valid review text and star rating (1-5) are required" });
         }
 
         // Fetch the hotel by ID
-        const hotel = await Restaurant.findById(id);
+        const hotel = await Restaurant.findById(id) || await RestaurantModel.findById(id);
         if (!hotel) {
             return res.status(404).json({ message: "Hotel not found" });
         }
 
-        console.log(`Hotel found: ${hotel.name}, Coordinates: (${hotel.latitude}, ${hotel.longitude})`);
-
-        // Perform sentiment analysis on the review text
+        // Sentiment analysis
         const intensity = vader.SentimentIntensityAnalyzer.polarity_scores(review_text);
-        let type = "";
-
-        if (intensity.compound >= 0.45) {
-            type = "positive";
-        } else if (intensity.compound >= 0) {
-            type = "neutral";
-        } else {
-            type = "negative";
-        }
+        const type = intensity.compound >= 0.45 ? "positive" : (intensity.compound >= 0 ? "neutral" : "negative");
 
         // Fetch the user by email
         const reviewer = await User.findOne({ email });
@@ -197,52 +187,40 @@ appRouter.post("/hotel-review",  async (req, res) => {
             return res.status(404).json({ message: "User not found" });
         }
 
-        console.log(`Reviewer: ${reviewer.name}, Email: ${email}`);
-
         // Create the review object
         const review = {
             user: reviewer._id,
             user_name: reviewer.name,
-            review_text: review_text,
+            review_text,
             Type: type,
-            stars: stars,
-            date: new Date(),  // Set current date
+            stars,
+            date: new Date(),
         };
-        // Check if the restaurant exists in RestaurantModel based on its coordinates
-        const found = await RestaurantModel.findOne({
-            latitude: hotel.latitude,
-            longitude: hotel.longitude,
-        });
+
+        const found = await RestaurantModel.findOne({ latitude: hotel.latitude, longitude: hotel.longitude });
 
         if (!found) {
-            // If not found, create a new restaurant entry
             const savedRestaurant = await RestaurantModel.create({
                 name: hotel.name,
                 longitude: hotel.longitude,
                 latitude: hotel.latitude,
-                reviews: [review],  // Add the first review
+                reviews: [review],
                 full_address: hotel.full_address,
-                reviewScore: intensity.compound,  // Set initial review score
+                reviewScore: intensity.compound,
             });
             return res.status(201).json(savedRestaurant);
         } else {
-            // If restaurant found, update the review score and add the new review
-            const totalLength = found.reviews.length;
-            const totalScore = found.reviewScore * totalLength;
-            const finalScore = (totalScore + intensity.compound) / (totalLength + 1);
-
-            // Add the new review and update review score
             found.reviews.push(review);
-            found.reviewScore = finalScore;
-            await found.save();  // Save the updated restaurant document
-
-            return res.status(200).json(found);  // Respond with the updated restaurant
+            found.reviewScore = (found.reviewScore * found.reviews.length + intensity.compound) / (found.reviews.length + 1);
+            await found.save();
+            return res.status(200).json(found);
         }
     } catch (error) {
         console.error("Error posting hotel review:", error);
         res.status(500).json({ message: "Server error, please try again later.", error });
     }
 });
+
 
 appRouter.get("/hotel-review",   async (req, res) => {
     try {
