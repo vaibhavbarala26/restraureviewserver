@@ -221,7 +221,6 @@ appRouter.post("/hotel-review", async (req, res) => {
     }
 });
 
-
 appRouter.get("/hotel-review",   async (req, res) => {
     try {
         const { latitude, longitude } = req.body
@@ -274,42 +273,16 @@ appRouter.get("/newhotel" , async(req , res)=>{
    }
     return res.status(200).json(rest)
 })
-appRouter.get("/hotels", async (req, res) => {
-    const { id } = req.query;
-    
-    try {
-        // Find the hotel from the original Restaurant collection
-        const savedhotel = await Restaurant.findById(id);
-        if (!savedhotel) {
-            return res.status(404).json({ message: "Hotel not found in Restaurant collection." });
-        }
-
-        // Find the hotel in the RestaurantModel based on latitude and longitude
-        const foundHotel = await RestaurantModel.findOne({ 
-            latitude: savedhotel.latitude, 
-            longitude: savedhotel.longitude 
-        });
-
-        if (!foundHotel) {
-            // If not found, create and save a new entry in RestaurantModel
-            const savedrest = await RestaurantModel.create({
-                name: savedhotel.name,
-                latitude: savedhotel.latitude,
-                longitude: savedhotel.longitude,
-                full_address: savedhotel.full_address,
-                photo: savedhotel.photo
-            });
-            return res.status(201).json(savedrest); // 201 status for created
-        }
-
-        // If found, return the found hotel
-        return res.status(200).json(foundHotel);
-    } catch (error) {
-        console.error("Error fetching hotel:", error);
-        return res.status(500).json({ message: "Internal server error." });
-    }
-});
-
+appRouter.get("/hotels" , async(req , res)=>{
+    const {id} = req.query;
+    console.log(id);
+    const foundhtel = await RestaurantModel.findById(id)
+   if(!foundhtel){
+    const savedrest = await RestaurantModel.create({name:foundhtel.name , latitude:foundhtel.latitude , longitude:foundhtel.longitude , full_address:foundhtel.full_address , photo:foundhtel.photo})
+    return res.status(200).json(savedrest)
+   }
+    return res.status(200).json(foundhtel)
+})
 appRouter.put("/like",  async (req, res) => {
     const { response, id, review_id, email } = req.body;
     try {
