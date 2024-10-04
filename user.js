@@ -32,7 +32,7 @@ routeruser.post("/", async (req, res) => {
       // Set the token in an HTTP-only cookie
       res.cookie("token", token, {
         path: "/",
-        domain: "localhost",
+        domain: "vercel.app",
         httpOnly: true,
         signed: true,
         expires: expires,
@@ -51,7 +51,7 @@ routeruser.post("/", async (req, res) => {
       // Set the token in an HTTP-only cookie
       res.cookie("token", token, {
         path: "/",
-        domain: "localhost",
+        domain: "vercel.app",
         httpOnly: true,
         signed: true,
         expires: expires,
