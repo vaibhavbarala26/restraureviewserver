@@ -278,8 +278,9 @@ appRouter.get("/hotels" , async(req , res)=>{
     const {id} = req.query;
     console.log(id);
     const foundhtel = await RestaurantModel.findById(id)
+    const savedhotel = await Restaurant.findById(id)
    if(!foundhtel){
-    const savedrest = await RestaurantModel.create({name:foundhtel.name , latitude:foundhtel.latitude , longitude:foundhtel.longitude , full_address:foundhtel.full_address , photo:foundhtel.photo})
+    const savedrest = await RestaurantModel.create({name:savedhotel.name , latitude:savedhotel.latitude , longitude:savedhotel.longitude , full_address:savedhotel.full_address , photo:savedhotel.photo})
     return res.status(200).json(savedrest)
    }
     return res.status(200).json(foundhtel)
