@@ -102,7 +102,7 @@ const vader = require('vader-sentiment');
 const haversineDistance = require("./nlp");
 const verifytoken = require("./middleware/verify");
 const appRouter = router()
-appRouter.post("/add-hotel", verifytoken, async (req, res) => {
+appRouter.post("/add-hotel",  async (req, res) => {
  try{
         const { name, latitude, longitude, full_address  , ratings, review_text , photo , email   } = req.body;
         const found = await RestaurantModel.findOne({ name, latitude, longitude })
@@ -162,7 +162,7 @@ appRouter.get("/hotel", async (req, res) => {
     }
 });
 
-appRouter.post("/hotel-review", verifytoken, async (req, res) => {
+appRouter.post("/hotel-review",  async (req, res) => {
     try {
         const { email, review_text, id, stars } = req.body;
 
@@ -306,7 +306,7 @@ appRouter.get("/hotels" , async(req , res)=>{
    }
     return res.status(200).json(foundhtel)
 })
-appRouter.put("/like", verifytoken, async (req, res) => {
+appRouter.put("/like",  async (req, res) => {
     const { response, id, review_id, email } = req.body;
     try {
         // Find the restaurant by ID
@@ -377,7 +377,7 @@ appRouter.put("/like", verifytoken, async (req, res) => {
 
                 // Save the updated restaurant model
                 await founds.save();
-                return res.status(200).json({ message: "Review updated successfully.", review , user:req.userid });
+                return res.status(200).json({ message: "Review updated successfully.", review , user });
             }
         }
 
